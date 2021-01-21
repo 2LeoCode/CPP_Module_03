@@ -6,7 +6,7 @@
 /*   By: lsuardi <lsuardi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 00:20:35 by lsuardi           #+#    #+#             */
-/*   Updated: 2021/01/21 18:35:08 by lsuardi          ###   ########.fr       */
+/*   Updated: 2021/01/21 21:50:26 by lsuardi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ class ClapTrap
 	public:
 
 	ClapTrap(std::string);
-	~ClapTrap(void);
+	virtual ~ClapTrap(void);
 
 
 	protected:

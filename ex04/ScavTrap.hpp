@@ -6,7 +6,7 @@
 /*   By: lsuardi <lsuardi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/19 22:09:00 by lsuardi           #+#    #+#             */
-/*   Updated: 2021/01/21 18:36:16 by lsuardi          ###   ########.fr       */
+/*   Updated: 2021/01/21 21:50:52 by lsuardi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class ScavTrap : protected ClapTrap
 	public:
 
 	ScavTrap(std::string name);
-	~ScavTrap(void);
+	virtual ~ScavTrap(void);
 
 	void			challengeNewcomer(void);
 

@@ -6,7 +6,7 @@
 /*   By: lsuardi <lsuardi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 12:20:44 by lsuardi           #+#    #+#             */
-/*   Updated: 2021/01/21 20:29:52 by lsuardi          ###   ########.fr       */
+/*   Updated: 2021/01/21 21:51:00 by lsuardi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class SuperTrap : public FragTrap, public NinjaTrap
 	public:
 
 	SuperTrap(std::string name);
-	~SuperTrap(void);
+	virtual ~SuperTrap(void);
 
 	using FragTrap::rangedAttack;
 	using NinjaTrap::meleeAttack;

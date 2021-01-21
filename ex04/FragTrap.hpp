@@ -6,7 +6,7 @@
 /*   By: lsuardi <lsuardi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 21:37:50 by lsuardi           #+#    #+#             */
-/*   Updated: 2021/01/21 20:45:04 by lsuardi          ###   ########.fr       */
+/*   Updated: 2021/01/21 21:50:32 by lsuardi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class FragTrap : virtual protected ClapTrap
 	public:
 
 	FragTrap(std::string name);
-	~FragTrap(void);
+	virtual ~FragTrap(void);
 
 	void			vaulthunter_dot_exe(std::string const &target);
 

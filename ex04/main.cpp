@@ -6,7 +6,7 @@
 /*   By: lsuardi <lsuardi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 19:33:48 by lsuardi           #+#    #+#             */
-/*   Updated: 2021/01/21 20:48:29 by lsuardi          ###   ########.fr       */
+/*   Updated: 2021/01/21 21:49:04 by lsuardi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
 
 int		main(void)
 {
-	SuperTrap	super("SuperBoy");
+	FragTrap	*super = new SuperTrap("SuperBoy");
 	FragTrap	frag("Fraggy");
 
-	super.vaulthunter_dot_exe("dummy");
-	super.ninjaShoebox(frag);
-	super.meleeAttack("dummy");
-	super.rangedAttack("dummy");
+	super->vaulthunter_dot_exe("dummy");
+	((SuperTrap*)super)->ninjaShoebox(frag);
+	super->meleeAttack("dummy");
+	super->rangedAttack("dummy");
 
-
-	frag.meleeAttack("dummy");
+	delete super;
+	/*frag.meleeAttack("dummy");
 	frag.rangedAttack("dummy");
 	frag.beRepaired(20);
 	frag.vaulthunter_dot_exe("dummy");
@@ -55,6 +55,6 @@ int		main(void)
 	ninja.ninjaShoebox(frag2);
 	ninja.ninjaShoebox(scav2);
 	ninja.ninjaShoebox(ninja2);
-
+*/
 	return (0);
 }

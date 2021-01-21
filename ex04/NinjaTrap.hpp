@@ -6,7 +6,7 @@
 /*   By: lsuardi <lsuardi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 11:24:15 by lsuardi           #+#    #+#             */
-/*   Updated: 2021/01/21 20:45:43 by lsuardi          ###   ########.fr       */
+/*   Updated: 2021/01/21 21:50:45 by lsuardi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class NinjaTrap : virtual protected ClapTrap
 	public:
 
 	NinjaTrap(std::string name);
-	~NinjaTrap(void);
+	virtual ~NinjaTrap(void);
 
 	void	ninjaShoebox(FragTrap &ft);
 	void	ninjaShoebox(ScavTrap &st);
